@@ -1,0 +1,121 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3375 2350 0    50   Input ~ 0
+LED1
+$Comp
+L Device:R R2
+U 1 1 5F7DD27B
+P 3525 2350
+F 0 "R2" V 3425 2350 50  0000 C CNN
+F 1 "330" V 3525 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3455 2350 50  0001 C CNN
+F 3 "~" H 3525 2350 50  0001 C CNN
+	1    3525 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 5F7DD4FA
+P 3825 2350
+F 0 "D2" H 3850 2225 50  0000 C CNN
+F 1 "D" H 3700 2250 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3825 2350 50  0001 C CNN
+F 3 "~" H 3825 2350 50  0001 C CNN
+	1    3825 2350
+	-1   0    0    1   
+$EndComp
+Text HLabel 3375 2850 0    50   Input ~ 0
+LED2
+$Comp
+L Device:R R3
+U 1 1 5F7DED2E
+P 3525 2850
+F 0 "R3" V 3425 2850 50  0000 C CNN
+F 1 "330" V 3525 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3455 2850 50  0001 C CNN
+F 3 "~" H 3525 2850 50  0001 C CNN
+	1    3525 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 5F7DED38
+P 3825 2850
+F 0 "D3" H 3850 2725 50  0000 C CNN
+F 1 "D" H 3700 2750 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3825 2850 50  0001 C CNN
+F 3 "~" H 3825 2850 50  0001 C CNN
+	1    3825 2850
+	-1   0    0    1   
+$EndComp
+Text HLabel 3400 3325 0    50   Input ~ 0
+LED3
+$Comp
+L Device:R R4
+U 1 1 5F7E0265
+P 3550 3325
+F 0 "R4" V 3450 3325 50  0000 C CNN
+F 1 "330" V 3550 3325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3480 3325 50  0001 C CNN
+F 3 "~" H 3550 3325 50  0001 C CNN
+	1    3550 3325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 5F7E026F
+P 3850 3325
+F 0 "D4" H 3875 3200 50  0000 C CNN
+F 1 "D" H 3725 3225 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3850 3325 50  0001 C CNN
+F 3 "~" H 3850 3325 50  0001 C CNN
+	1    3850 3325
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5F7E0279
+P 4000 3325
+F 0 "#PWR0111" H 4000 3075 50  0001 C CNN
+F 1 "GND" H 4005 3152 50  0000 C CNN
+F 2 "" H 4000 3325 50  0001 C CNN
+F 3 "" H 4000 3325 50  0001 C CNN
+	1    4000 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5F7DED42
+P 3975 2850
+F 0 "#PWR0112" H 3975 2600 50  0001 C CNN
+F 1 "GND" H 3980 2677 50  0000 C CNN
+F 2 "" H 3975 2850 50  0001 C CNN
+F 3 "" H 3975 2850 50  0001 C CNN
+	1    3975 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5F7DD7B1
+P 3975 2350
+F 0 "#PWR0113" H 3975 2100 50  0001 C CNN
+F 1 "GND" H 3980 2177 50  0000 C CNN
+F 2 "" H 3975 2350 50  0001 C CNN
+F 3 "" H 3975 2350 50  0001 C CNN
+	1    3975 2350
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
