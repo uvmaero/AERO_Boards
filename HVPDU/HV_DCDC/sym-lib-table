@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name HVPDU-rescue)(type Legacy)(uri /home/george/Documents/GitHub/AERO/AERO_2020-2021/HVPDU/HVPDU/HVPDU-rescue.lib)(options "")(descr ""))
+  (lib (name HV_DCDC-rescue)(type Legacy)(uri ${KIPRJMOD}/HV_DCDC-rescue.lib)(options "")(descr ""))
+)

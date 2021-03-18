@@ -1,0 +1,191 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Relay:G5V-1 K?
+U 1 1 600A3AF0
+P 3950 2400
+F 0 "K?" V 4517 2400 50  0000 C CNN
+F 1 "G5V-1" V 4426 2400 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_Omron_G5V-1" H 5080 2370 50  0001 C CNN
+F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf" H 3950 2400 50  0001 C CNN
+	1    3950 2400
+	0    -1   -1   0   
+$EndComp
+Text Label 4825 2600 2    50   ~ 0
+SHUTDOWN_IN
+Wire Wire Line
+	4825 2600 4250 2600
+$Comp
+L Transistor_BJT:MMBT3904 Q?
+U 1 1 600A4B0F
+P 3150 2825
+F 0 "Q?" H 3341 2871 50  0000 L CNN
+F 1 "MMBT3904" H 3341 2780 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3350 2750 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3150 2825 50  0001 L CNN
+	1    3150 2825
+	1    0    0    -1  
+$EndComp
+Text Label 2425 2825 0    50   ~ 0
+PRECHARGE
+Wire Wire Line
+	2425 2825 2950 2825
+Wire Wire Line
+	3250 2625 3250 2600
+Wire Wire Line
+	3250 2600 3650 2600
+$Comp
+L power:GND #PWR?
+U 1 1 600A5846
+P 3250 3175
+F 0 "#PWR?" H 3250 2925 50  0001 C CNN
+F 1 "GND" H 3255 3002 50  0000 C CNN
+F 2 "" H 3250 3175 50  0001 C CNN
+F 3 "" H 3250 3175 50  0001 C CNN
+	1    3250 3175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3175 3250 3025
+$Comp
+L Device:R R?
+U 1 1 600A651C
+P 4850 2200
+F 0 "R?" V 4643 2200 50  0000 C CNN
+F 1 "R" V 4734 2200 50  0000 C CNN
+F 2 "" V 4780 2200 50  0001 C CNN
+F 3 "~" H 4850 2200 50  0001 C CNN
+	1    4850 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Relay:FINDER-32.21-x300 K?
+U 1 1 600A7B0B
+P 2000 1525
+F 0 "K?" V 2567 1525 50  0000 C CNN
+F 1 "G5V-1" V 2476 1525 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_Omron_G5V-1" H 3130 1495 50  0001 C CNN
+F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf" H 2000 1525 50  0001 C CNN
+	1    2000 1525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Battery BT?
+U 1 1 600ADF9A
+P 975 1800
+F 0 "BT?" H 1083 1846 50  0000 L CNN
+F 1 "Battery" H 1083 1755 50  0000 L CNN
+F 2 "" V 975 1860 50  0001 C CNN
+F 3 "~" V 975 1860 50  0001 C CNN
+	1    975  1800
+	1    0    0    -1  
+$EndComp
+Text Label 2750 1725 2    50   ~ 0
+MAIN_CONT
+Wire Wire Line
+	2750 1725 2300 1725
+$Comp
+L power:GND #PWR?
+U 1 1 600B8C79
+P 1650 1725
+F 0 "#PWR?" H 1650 1475 50  0001 C CNN
+F 1 "GND" H 1655 1552 50  0000 C CNN
+F 2 "" H 1650 1725 50  0001 C CNN
+F 3 "" H 1650 1725 50  0001 C CNN
+	1    1650 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:FINDER-32.21-x300 K?
+U 1 1 600B94A6
+P 2000 3850
+F 0 "K?" V 2567 3850 50  0000 C CNN
+F 1 "G5V-1" V 2476 3850 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_Omron_G5V-1" H 3130 3820 50  0001 C CNN
+F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf" H 2000 3850 50  0001 C CNN
+	1    2000 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	975  2000 975  3550
+Wire Wire Line
+	975  3550 1700 3550
+$Comp
+L power:GND #PWR?
+U 1 1 600BA2B3
+P 1625 4275
+F 0 "#PWR?" H 1625 4025 50  0001 C CNN
+F 1 "GND" H 1630 4102 50  0000 C CNN
+F 2 "" H 1625 4275 50  0001 C CNN
+F 3 "" H 1625 4275 50  0001 C CNN
+	1    1625 4275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1625 4275 1625 4050
+Wire Wire Line
+	1625 4050 1700 4050
+Text Label 2875 4050 2    50   ~ 0
+SHUTDOWN_IN
+Wire Wire Line
+	2875 4050 2300 4050
+Wire Wire Line
+	3650 2300 2350 2300
+Wire Wire Line
+	2350 2300 2350 3650
+Wire Wire Line
+	2350 3650 2300 3650
+$Comp
+L Device:C C?
+U 1 1 600BE028
+P 6125 2325
+F 0 "C?" H 6240 2371 50  0000 L CNN
+F 1 "C" H 6240 2280 50  0000 L CNN
+F 2 "" H 6163 2175 50  0001 C CNN
+F 3 "~" H 6125 2325 50  0001 C CNN
+	1    6125 2325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1725 1700 1725
+Wire Wire Line
+	1525 1225 1525 2100
+Wire Wire Line
+	1525 2100 3650 2100
+Connection ~ 1525 1225
+Wire Wire Line
+	1525 1225 1700 1225
+Wire Wire Line
+	975  1225 975  1600
+Wire Wire Line
+	975  1225 1525 1225
+Wire Wire Line
+	5000 2200 5000 1325
+Wire Wire Line
+	5000 1325 2300 1325
+Wire Wire Line
+	5000 1325 6125 1325
+Wire Wire Line
+	6125 1325 6125 2175
+Connection ~ 5000 1325
+Wire Wire Line
+	2350 3650 6125 3650
+Wire Wire Line
+	6125 3650 6125 2475
+Connection ~ 2350 3650
+Wire Wire Line
+	4700 2200 4250 2200
+$EndSCHEMATC

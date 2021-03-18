@@ -1,0 +1,272 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_CAN_LIN:MCP2515-xSO U5
+U 1 1 5FFBACF4
+P 4500 4175
+F 0 "U5" H 4975 5075 50  0000 C CNN
+F 1 "MCP2515-xSO" H 5000 4975 50  0000 C CNN
+F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 4500 3275 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 4600 3375 50  0001 C CNN
+	1    4500 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_CAN_LIN:MCP2551-I-SN U6
+U 1 1 5FFBACF5
+P 6600 3775
+F 0 "U6" H 7025 4275 50  0000 C CNN
+F 1 "MCP2551-I-SN" H 6975 4175 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6600 3275 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 6600 3775 50  0001 C CNN
+	1    6600 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0124
+U 1 1 6011BDC8
+P 4500 2900
+F 0 "#PWR0124" H 4500 2750 50  0001 C CNN
+F 1 "+5V" H 4515 3073 50  0000 C CNN
+F 2 "" H 4500 2900 50  0001 C CNN
+F 3 "" H 4500 2900 50  0001 C CNN
+	1    4500 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 6011BDC9
+P 4500 4975
+F 0 "#PWR0125" H 4500 4725 50  0001 C CNN
+F 1 "GND" H 4505 4802 50  0000 C CNN
+F 2 "" H 4500 4975 50  0001 C CNN
+F 3 "" H 4500 4975 50  0001 C CNN
+	1    4500 4975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0126
+U 1 1 6011BDCA
+P 5525 4775
+F 0 "#PWR0126" H 5525 4625 50  0001 C CNN
+F 1 "+5V" H 5540 4948 50  0000 C CNN
+F 2 "" H 5525 4775 50  0001 C CNN
+F 3 "" H 5525 4775 50  0001 C CNN
+	1    5525 4775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 6011BDCB
+P 4025 3050
+F 0 "C7" H 4140 3096 50  0000 L CNN
+F 1 "0.1u" H 4140 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4063 2900 50  0001 C CNN
+F 3 "~" H 4025 3050 50  0001 C CNN
+	1    4025 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 5FFBAD03
+P 4025 3200
+F 0 "#PWR0127" H 4025 2950 50  0001 C CNN
+F 1 "GND" H 4030 3027 50  0000 C CNN
+F 2 "" H 4025 3200 50  0001 C CNN
+F 3 "" H 4025 3200 50  0001 C CNN
+	1    4025 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2900 4500 3375
+Wire Wire Line
+	4025 2900 4500 2900
+Connection ~ 4500 2900
+$Comp
+L Device:R R4
+U 1 1 5FFBAD04
+P 5325 4775
+F 0 "R4" V 5225 4775 50  0000 C CNN
+F 1 "10K" V 5325 4775 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5255 4775 50  0001 C CNN
+F 3 "~" H 5325 4775 50  0001 C CNN
+	1    5325 4775
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5175 4775 5100 4775
+Wire Wire Line
+	5475 4775 5525 4775
+Wire Wire Line
+	5100 3575 5600 3575
+Wire Wire Line
+	5600 3575 5700 3675
+Wire Wire Line
+	5700 3675 6100 3675
+Wire Wire Line
+	5600 3675 5725 3575
+Wire Wire Line
+	5100 3675 5600 3675
+Wire Wire Line
+	5725 3575 6100 3575
+Text Label 5200 3575 0    50   ~ 0
+RXCAN
+Text Label 5200 3675 0    50   ~ 0
+TXCAN
+Wire Wire Line
+	5175 4175 5100 4175
+$Comp
+L power:+5V #PWR0128
+U 1 1 5FFBAD05
+P 6600 2900
+F 0 "#PWR0128" H 6600 2750 50  0001 C CNN
+F 1 "+5V" H 6615 3073 50  0000 C CNN
+F 2 "" H 6600 2900 50  0001 C CNN
+F 3 "" H 6600 2900 50  0001 C CNN
+	1    6600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 60014BBC
+P 6125 3050
+F 0 "C8" H 6240 3096 50  0000 L CNN
+F 1 "0.1u" H 6240 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6163 2900 50  0001 C CNN
+F 3 "~" H 6125 3050 50  0001 C CNN
+	1    6125 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 6011BDCF
+P 6125 3200
+F 0 "#PWR0129" H 6125 2950 50  0001 C CNN
+F 1 "GND" H 6130 3027 50  0000 C CNN
+F 2 "" H 6125 3200 50  0001 C CNN
+F 3 "" H 6125 3200 50  0001 C CNN
+	1    6125 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2900 6600 3375
+Wire Wire Line
+	6125 2900 6600 2900
+Connection ~ 6600 2900
+$Comp
+L power:GND #PWR0130
+U 1 1 600190E5
+P 6600 4175
+F 0 "#PWR0130" H 6600 3925 50  0001 C CNN
+F 1 "GND" H 6605 4002 50  0000 C CNN
+F 2 "" H 6600 4175 50  0001 C CNN
+F 3 "" H 6600 4175 50  0001 C CNN
+	1    6600 4175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3975 6100 4175
+Wire Wire Line
+	6100 4175 6600 4175
+Connection ~ 6600 4175
+Wire Wire Line
+	3900 4375 3225 4375
+Wire Wire Line
+	3225 4375 3225 4750
+Wire Wire Line
+	3225 4750 3375 4750
+Wire Wire Line
+	3900 4475 3775 4475
+Wire Wire Line
+	3775 4475 3775 4750
+Wire Wire Line
+	3775 4750 3675 4750
+$Comp
+L power:GND #PWR0131
+U 1 1 6011BDD8
+P 3525 4950
+F 0 "#PWR0131" H 3525 4700 50  0001 C CNN
+F 1 "GND" H 3530 4777 50  0000 C CNN
+F 2 "" H 3525 4950 50  0001 C CNN
+F 3 "" H 3525 4950 50  0001 C CNN
+	1    3525 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 6011BDD0
+P 7675 3775
+F 0 "R5" H 7745 3821 50  0000 L CNN
+F 1 "120" V 7675 3700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7605 3775 50  0001 C CNN
+F 3 "~" H 7675 3775 50  0001 C CNN
+	1    7675 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3625 7550 3675
+Wire Wire Line
+	7100 3675 7550 3675
+Wire Wire Line
+	7675 3925 7550 3925
+Wire Wire Line
+	7550 3925 7550 3875
+Wire Wire Line
+	7100 3875 7550 3875
+Text Notes 7450 4125 0    50   ~ 0
+TERMINATION\n(OPTIONAL)
+Wire Wire Line
+	3675 3875 3900 3875
+Wire Wire Line
+	3675 3675 3900 3675
+Wire Wire Line
+	3675 3575 3900 3575
+$Comp
+L Device:Resonator Y1
+U 1 1 6011BDC0
+P 3525 4750
+F 0 "Y1" H 3525 4998 50  0000 C CNN
+F 1 "16MHz" H 3525 4907 50  0000 C CNN
+F 2 "AERO_CUSTOM:Resonator_SMD_muRata_CSTxExxV-3Pin_3.0x1.1mm_HandSoldering" H 3500 4750 50  0001 C CNN
+F 3 "~" H 3500 4750 50  0001 C CNN
+	1    3525 4750
+	1    0    0    -1  
+$EndComp
+Text HLabel 3675 3675 0    50   Input ~ 0
+MISO
+Text HLabel 3675 3575 0    50   Input ~ 0
+MOSI
+Text HLabel 3675 3775 0    50   Input ~ 0
+CAN_CS
+Text HLabel 3675 3875 0    50   Input ~ 0
+SCK
+Wire Wire Line
+	3900 3775 3675 3775
+Text HLabel 7950 3625 2    50   BiDi ~ 0
+CANH
+Text HLabel 7950 3925 2    50   BiDi ~ 0
+CANL
+Wire Wire Line
+	7950 3925 7675 3925
+Connection ~ 7675 3925
+Wire Wire Line
+	7550 3625 7675 3625
+Connection ~ 7675 3625
+Wire Wire Line
+	7675 3625 7950 3625
+Text HLabel 5175 4175 2    50   Input ~ 0
+CAN_INT
+$EndSCHEMATC

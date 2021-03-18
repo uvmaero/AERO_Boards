@@ -1,0 +1,272 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_CAN_LIN:MCP2515-xSO U?
+U 1 1 5FFC8CD1
+P 4650 3825
+F 0 "U?" H 5125 4725 50  0000 C CNN
+F 1 "MCP2515-xSO" H 5150 4625 50  0000 C CNN
+F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 4650 2925 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 4750 3025 50  0001 C CNN
+	1    4650 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_CAN_LIN:MCP2551-I-SN U?
+U 1 1 5FFC8CD2
+P 6750 3425
+F 0 "U?" H 7175 3925 50  0000 C CNN
+F 1 "MCP2551-I-SN" H 7125 3825 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6750 2925 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 6750 3425 50  0001 C CNN
+	1    6750 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5FFBACFF
+P 4650 2550
+F 0 "#PWR?" H 4650 2400 50  0001 C CNN
+F 1 "+5V" H 4665 2723 50  0000 C CNN
+F 2 "" H 4650 2550 50  0001 C CNN
+F 3 "" H 4650 2550 50  0001 C CNN
+	1    4650 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FFC8CD8
+P 4650 4625
+F 0 "#PWR?" H 4650 4375 50  0001 C CNN
+F 1 "GND" H 4655 4452 50  0000 C CNN
+F 2 "" H 4650 4625 50  0001 C CNN
+F 3 "" H 4650 4625 50  0001 C CNN
+	1    4650 4625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5FFC8CD9
+P 5675 4425
+F 0 "#PWR?" H 5675 4275 50  0001 C CNN
+F 1 "+5V" H 5690 4598 50  0000 C CNN
+F 2 "" H 5675 4425 50  0001 C CNN
+F 3 "" H 5675 4425 50  0001 C CNN
+	1    5675 4425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FFBAD02
+P 4175 2700
+F 0 "C?" H 4290 2746 50  0000 L CNN
+F 1 "0.1u" H 4290 2655 50  0000 L CNN
+F 2 "" H 4213 2550 50  0001 C CNN
+F 3 "~" H 4175 2700 50  0001 C CNN
+	1    4175 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FFBAD03
+P 4175 2850
+F 0 "#PWR?" H 4175 2600 50  0001 C CNN
+F 1 "GND" H 4180 2677 50  0000 C CNN
+F 2 "" H 4175 2850 50  0001 C CNN
+F 3 "" H 4175 2850 50  0001 C CNN
+	1    4175 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2550 4650 3025
+Wire Wire Line
+	4175 2550 4650 2550
+Connection ~ 4650 2550
+$Comp
+L Device:R R?
+U 1 1 5FFC8CDC
+P 5475 4425
+F 0 "R?" V 5375 4425 50  0000 C CNN
+F 1 "10K" V 5475 4425 50  0000 C CNN
+F 2 "" V 5405 4425 50  0001 C CNN
+F 3 "~" H 5475 4425 50  0001 C CNN
+	1    5475 4425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5325 4425 5250 4425
+Wire Wire Line
+	5625 4425 5675 4425
+Wire Wire Line
+	5250 3225 5750 3225
+Wire Wire Line
+	5750 3225 5850 3325
+Wire Wire Line
+	5850 3325 6250 3325
+Wire Wire Line
+	5750 3325 5875 3225
+Wire Wire Line
+	5250 3325 5750 3325
+Wire Wire Line
+	5875 3225 6250 3225
+Text Label 5350 3225 0    50   ~ 0
+RXCAN
+Text Label 5350 3325 0    50   ~ 0
+TXCAN
+Wire Wire Line
+	5375 3825 5250 3825
+Wire Wire Line
+	3825 3425 4050 3425
+$Comp
+L power:+5V #PWR?
+U 1 1 5FFC8CDD
+P 6750 2550
+F 0 "#PWR?" H 6750 2400 50  0001 C CNN
+F 1 "+5V" H 6765 2723 50  0000 C CNN
+F 2 "" H 6750 2550 50  0001 C CNN
+F 3 "" H 6750 2550 50  0001 C CNN
+	1    6750 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60014BBC
+P 6275 2700
+F 0 "C?" H 6390 2746 50  0000 L CNN
+F 1 "0.1u" H 6390 2655 50  0000 L CNN
+F 2 "" H 6313 2550 50  0001 C CNN
+F 3 "~" H 6275 2700 50  0001 C CNN
+	1    6275 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FFC8CDE
+P 6275 2850
+F 0 "#PWR?" H 6275 2600 50  0001 C CNN
+F 1 "GND" H 6280 2677 50  0000 C CNN
+F 2 "" H 6275 2850 50  0001 C CNN
+F 3 "" H 6275 2850 50  0001 C CNN
+	1    6275 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2550 6750 3025
+Wire Wire Line
+	6275 2550 6750 2550
+Connection ~ 6750 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5FFC8CE8
+P 6750 3825
+F 0 "#PWR?" H 6750 3575 50  0001 C CNN
+F 1 "GND" H 6755 3652 50  0000 C CNN
+F 2 "" H 6750 3825 50  0001 C CNN
+F 3 "" H 6750 3825 50  0001 C CNN
+	1    6750 3825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3625 6250 3825
+Wire Wire Line
+	6250 3825 6750 3825
+Connection ~ 6750 3825
+Wire Wire Line
+	4050 4025 3375 4025
+Wire Wire Line
+	3375 4025 3375 4400
+Wire Wire Line
+	3375 4400 3525 4400
+Wire Wire Line
+	4050 4125 3925 4125
+Wire Wire Line
+	3925 4125 3925 4400
+Wire Wire Line
+	3925 4400 3825 4400
+$Comp
+L power:GND #PWR?
+U 1 1 6002416B
+P 3675 4600
+F 0 "#PWR?" H 3675 4350 50  0001 C CNN
+F 1 "GND" H 3680 4427 50  0000 C CNN
+F 2 "" H 3675 4600 50  0001 C CNN
+F 3 "" H 3675 4600 50  0001 C CNN
+	1    3675 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FFC8CDF
+P 7825 3425
+F 0 "R?" H 7895 3471 50  0000 L CNN
+F 1 "120" V 7825 3350 50  0000 L CNN
+F 2 "" V 7755 3425 50  0001 C CNN
+F 3 "~" H 7825 3425 50  0001 C CNN
+	1    7825 3425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7825 3275 7700 3275
+Wire Wire Line
+	7700 3275 7700 3325
+Wire Wire Line
+	7250 3325 7700 3325
+Wire Wire Line
+	7825 3575 7700 3575
+Wire Wire Line
+	7700 3575 7700 3525
+Wire Wire Line
+	7250 3525 7700 3525
+Text Notes 7600 3775 0    50   ~ 0
+TERMINATION\n(OPTIONAL)
+Wire Wire Line
+	3825 3525 4050 3525
+Wire Wire Line
+	3825 3325 4050 3325
+Wire Wire Line
+	3825 3225 4050 3225
+$Comp
+L Device:Resonator Y?
+U 1 1 5FFC8CC8
+P 3675 4400
+F 0 "Y?" H 3675 4648 50  0000 C CNN
+F 1 "16MHz" H 3675 4557 50  0000 C CNN
+F 2 "" H 3650 4400 50  0001 C CNN
+F 3 "~" H 3650 4400 50  0001 C CNN
+	1    3675 4400
+	1    0    0    -1  
+$EndComp
+Text HLabel 3825 3225 0    50   Input ~ 0
+MOSI
+Text HLabel 3825 3325 0    50   Input ~ 0
+MISO
+Text HLabel 3825 3425 0    50   Input ~ 0
+CAN_CS
+Text HLabel 3825 3525 0    50   Input ~ 0
+SCK
+Text HLabel 5375 3825 2    50   Input ~ 0
+CAN_INT
+Text HLabel 8025 3275 2    50   BiDi ~ 0
+CANH
+Text HLabel 8025 3575 2    50   BiDi ~ 0
+CANL
+Wire Wire Line
+	8025 3575 7825 3575
+Connection ~ 7825 3575
+Wire Wire Line
+	8025 3275 7825 3275
+Connection ~ 7825 3275
+$EndSCHEMATC

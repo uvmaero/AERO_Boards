@@ -1,0 +1,337 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5F907B1F
+P 2300 3375
+F 0 "SW?" V 2346 3287 50  0001 R CNN
+F 1 "GLVMS" V 2300 3287 50  0000 R CNN
+F 2 "" H 2300 3375 50  0001 C CNN
+F 3 "~" H 2300 3375 50  0001 C CNN
+	1    2300 3375
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5F90AB42
+P 2700 2250
+F 0 "SW?" H 2700 2485 50  0001 C CNN
+F 1 "Brake Overtravel" H 2700 2393 50  0000 C CNN
+F 2 "" H 2700 2250 50  0001 C CNN
+F 3 "~" H 2700 2250 50  0001 C CNN
+	1    2700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:DIPxx-1Axx-11x K?
+U 1 1 5F91092B
+P 4600 2450
+F 0 "K?" V 5067 2450 50  0001 C CNN
+F 1 "IMD Fault" V 4975 2450 50  0000 C CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 4950 2400 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 4600 2450 50  0001 C CNN
+	1    4600 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:DIPxx-1Axx-11x K?
+U 1 1 5F91138D
+P 5575 2450
+F 0 "K?" V 6042 2450 50  0001 C CNN
+F 1 "TMS Fault" V 5950 2450 50  0000 C CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 5925 2400 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 5575 2450 50  0001 C CNN
+	1    5575 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5F912643
+P 6575 2450
+F 0 "SW?" V 6529 2548 50  0001 L CNN
+F 1 "Pack Connector Interlock" V 6575 2548 50  0000 L CNN
+F 2 "" H 6575 2450 50  0001 C CNN
+F 3 "~" H 6575 2450 50  0001 C CNN
+	1    6575 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5F912EE1
+P 6575 2850
+F 0 "SW?" V 6529 2948 50  0001 L CNN
+F 1 "Pack Connector Interlock" V 6575 2948 50  0000 L CNN
+F 2 "" H 6575 2850 50  0001 C CNN
+F 3 "~" H 6575 2850 50  0001 C CNN
+	1    6575 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5F913410
+P 6950 3250
+F 0 "J?" H 7030 3292 50  0001 L CNN
+F 1 "SSOK" H 7030 3246 50  0000 L CNN
+F 2 "" H 6950 3250 50  0001 C CNN
+F 3 "~" H 6950 3250 50  0001 C CNN
+	1    6950 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_Open SW?
+U 1 1 5F914DC3
+P 6575 3650
+F 0 "SW?" V 6621 3598 50  0001 R CNN
+F 1 "Cockpit BRB" V 6575 3598 50  0000 R CNN
+F 2 "" H 6575 3850 50  0001 C CNN
+F 3 "~" H 6575 3850 50  0001 C CNN
+	1    6575 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_Open SW?
+U 1 1 5F91550D
+P 2300 2975
+F 0 "SW?" V 2346 2922 50  0001 R CNN
+F 1 "Side BRB 1" V 2300 2922 50  0000 R CNN
+F 2 "" H 2300 3175 50  0001 C CNN
+F 3 "~" H 2300 3175 50  0001 C CNN
+	1    2300 2975
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_Open SW?
+U 1 1 5F916017
+P 2300 2575
+F 0 "SW?" V 2346 2522 50  0001 R CNN
+F 1 "Side BRB 2" V 2300 2522 50  0000 R CNN
+F 2 "" H 2300 2775 50  0001 C CNN
+F 3 "~" H 2300 2775 50  0001 C CNN
+	1    2300 2575
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5F91AF7C
+P 6575 4050
+F 0 "SW?" V 6529 4148 50  0001 L CNN
+F 1 "TMS" V 6575 4148 50  0000 L CNN
+F 2 "" H 6575 4050 50  0001 C CNN
+F 3 "~" H 6575 4050 50  0001 C CNN
+	1    6575 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5F91B70E
+P 6975 4400
+F 0 "J?" H 7055 4442 50  0001 L CNN
+F 1 "AIR Supply" H 7055 4396 50  0000 L CNN
+F 2 "" H 6975 4400 50  0001 C CNN
+F 3 "~" H 6975 4400 50  0001 C CNN
+	1    6975 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F91C3AA
+P 2300 4375
+F 0 "#PWR?" H 2300 4125 50  0001 C CNN
+F 1 "GND" H 2305 4202 50  0000 C CNN
+F 2 "" H 2300 4375 50  0001 C CNN
+F 3 "" H 2300 4375 50  0001 C CNN
+	1    2300 4375
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F91C8B2
+P 3950 2850
+F 0 "#PWR?" H 3950 2600 50  0001 C CNN
+F 1 "GND" H 3955 2677 50  0000 C CNN
+F 2 "" H 3950 2850 50  0001 C CNN
+F 3 "" H 3950 2850 50  0001 C CNN
+	1    3950 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F91CCF1
+P 5025 2850
+F 0 "#PWR?" H 5025 2600 50  0001 C CNN
+F 1 "GND" H 5030 2677 50  0000 C CNN
+F 2 "" H 5025 2850 50  0001 C CNN
+F 3 "" H 5025 2850 50  0001 C CNN
+	1    5025 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F91D0EC
+P 6000 2825
+F 0 "#PWR?" H 6000 2575 50  0001 C CNN
+F 1 "GND" H 6005 2652 50  0000 C CNN
+F 2 "" H 6000 2825 50  0001 C CNN
+F 3 "" H 6000 2825 50  0001 C CNN
+	1    6000 2825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2250 3250 2250
+Wire Wire Line
+	3850 2250 4300 2250
+Wire Wire Line
+	4900 2250 5275 2250
+Wire Wire Line
+	6575 3050 6575 3250
+Wire Wire Line
+	6575 3250 6750 3250
+Wire Wire Line
+	6575 3250 6575 3400
+Connection ~ 6575 3250
+Wire Wire Line
+	6575 4250 6575 4400
+Wire Wire Line
+	6575 4400 6775 4400
+Wire Wire Line
+	5875 2650 6000 2650
+Wire Wire Line
+	6000 2650 6000 2825
+Wire Wire Line
+	5025 2850 5025 2650
+Wire Wire Line
+	5025 2650 4900 2650
+Wire Wire Line
+	3950 2850 3950 2650
+Wire Wire Line
+	3950 2650 3850 2650
+Wire Wire Line
+	2500 2250 2300 2250
+Wire Wire Line
+	2300 2375 2300 2250
+Connection ~ 2300 2250
+Wire Wire Line
+	2300 2250 2175 2250
+$Comp
+L Device:Fuse F?
+U 1 1 5F906FDF
+P 2300 3775
+F 0 "F?" H 2360 3821 50  0001 L CNN
+F 1 "GLV Main Fuse" H 2350 3825 50  0000 L CNN
+F 2 "" V 2230 3775 50  0001 C CNN
+F 3 "~" H 2300 3775 50  0001 C CNN
+	1    2300 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3625 2300 3575
+Wire Wire Line
+	2300 3925 2300 3950
+$Comp
+L Device:Fuse F?
+U 1 1 5F92A12A
+P 2725 4100
+F 0 "F?" V 2528 4100 50  0001 C CNN
+F 1 "DC/DC Fuse" H 2700 3900 50  0000 C CNN
+F 2 "" V 2655 4100 50  0001 C CNN
+F 3 "~" H 2725 4100 50  0001 C CNN
+	1    2725 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5F92A6D1
+P 2725 4500
+F 0 "J?" H 2805 4542 50  0001 L CNN
+F 1 "DC/DC Output" V 2850 4300 50  0000 L CNN
+F 2 "" H 2725 4500 50  0001 C CNN
+F 3 "~" H 2725 4500 50  0001 C CNN
+	1    2725 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2725 3950 2300 3950
+Connection ~ 2300 3950
+Wire Wire Line
+	2300 3950 2300 3975
+$Comp
+L Device:Battery BT?
+U 1 1 5F906B7F
+P 2300 4175
+F 0 "BT?" H 2408 4221 50  0001 L CNN
+F 1 "GLV Battery" H 1750 4175 50  0000 L CNN
+F 2 "" V 2300 4235 50  0001 C CNN
+F 3 "~" V 2300 4235 50  0001 C CNN
+	1    2300 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5F90A34C
+P 1975 2250
+F 0 "J?" H 1893 2025 50  0001 C CNN
+F 1 "GLV Supply" H 2000 2375 50  0000 C CNN
+F 2 "" H 1975 2250 50  0001 C CNN
+F 3 "~" H 1975 2250 50  0001 C CNN
+	1    1975 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Relay:DIPxx-1Axx-11x K?
+U 1 1 5F90D5E4
+P 3550 2450
+F 0 "K?" V 4017 2450 50  0001 C CNN
+F 1 "BMS Fault" V 3925 2450 50  0000 C CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 3900 2400 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 3550 2450 50  0001 C CNN
+	1    3550 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5F93D847
+P 6950 3400
+F 0 "J?" H 7030 3442 50  0001 L CNN
+F 1 "SSOK" H 7030 3396 50  0000 L CNN
+F 2 "" H 6950 3400 50  0001 C CNN
+F 3 "~" H 6950 3400 50  0001 C CNN
+	1    6950 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6575 3400 6750 3400
+Connection ~ 6575 3400
+Wire Wire Line
+	6575 3400 6575 3450
+Text Label 3025 2650 0    50   ~ 0
+BMS
+Wire Wire Line
+	3025 2650 3250 2650
+Text Label 4150 2650 0    50   ~ 0
+IMD
+Wire Wire Line
+	4150 2650 4300 2650
+Text Label 5100 2650 0    50   ~ 0
+TMS
+Wire Wire Line
+	5100 2650 5275 2650
+Text Notes 2975 4150 0    83   ~ 0
+BMS: Battery Management System (EMUS BMS)\nIMD: Insulation Monitoring Device (Bender IR155-3024\nTMS: Temperature Monitoring System (EMUS BMS)\n\nInterlocks for these systems are shown Figure below\n\n"GLV Supply" is controlled by a relay
+Wire Wire Line
+	2725 4250 2725 4300
+Wire Wire Line
+	5875 2250 6575 2250
+$EndSCHEMATC

@@ -1,0 +1,357 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 2425 4575 975  675 
+U 5FA4E758
+F0 "pre/discharge" 50
+F1 "precharge.sch" 50
+F2 "SHDN_IN" I L 2425 4975 50 
+F3 "PRECHARGE" I L 2425 4775 50 
+F4 "MAIN_CONT" I L 2425 4875 50 
+$EndSheet
+Text Label 5775 6775 0    50   ~ 0
+CAN+
+Wire Wire Line
+	5775 6775 6075 6775
+Text Label 5775 6875 0    50   ~ 0
+CAN-
+Wire Wire Line
+	5775 6875 6075 6875
+$Comp
+L power:GND #PWR0105
+U 1 1 60081230
+P 5375 7375
+F 0 "#PWR0105" H 5375 7125 50  0001 C CNN
+F 1 "GND" H 5380 7202 50  0000 C CNN
+F 2 "" H 5375 7375 50  0001 C CNN
+F 3 "" H 5375 7375 50  0001 C CNN
+	1    5375 7375
+	1    0    0    -1  
+$EndComp
+Text Label 5525 7475 0    50   ~ 0
+PRECHARGE
+Wire Wire Line
+	5525 7475 6075 7475
+Text Label 5525 7075 0    50   ~ 0
+CONTACTOR
+Wire Wire Line
+	5525 7075 6075 7075
+Text Label 1875 4775 0    50   ~ 0
+PRECHARGE
+Wire Wire Line
+	1875 4775 2425 4775
+Text Label 1875 4875 0    50   ~ 0
+CONTACTOR
+Wire Wire Line
+	1875 4875 2425 4875
+Text Label 1875 4975 0    50   ~ 0
+SHUTDOWN_IN
+Wire Wire Line
+	1875 4975 2425 4975
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 600F3AB2
+P 750 6850
+F 0 "H1" H 850 6896 50  0000 L CNN
+F 1 "MountingHole" H 850 6805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 750 6850 50  0001 C CNN
+F 3 "~" H 750 6850 50  0001 C CNN
+	1    750  6850
+	1    0    0    -1  
+$EndComp
+Text Label 8025 3625 0    50   ~ 0
+FAN_CTRL
+Wire Wire Line
+	8025 3625 8450 3625
+$Comp
+L power:GND #PWR0116
+U 1 1 60108051
+P 8750 4075
+F 0 "#PWR0116" H 8750 3825 50  0001 C CNN
+F 1 "GND" H 8755 3902 50  0000 C CNN
+F 2 "" H 8750 4075 50  0001 C CNN
+F 3 "" H 8750 4075 50  0001 C CNN
+	1    8750 4075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 4075 8750 4000
+$Comp
+L Device:R R6
+U 1 1 6010A9B8
+P 8450 3850
+F 0 "R6" H 8525 3850 50  0000 L CNN
+F 1 "10k" V 8450 3775 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8380 3850 50  0001 C CNN
+F 3 "~" H 8450 3850 50  0001 C CNN
+	1    8450 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 3700 8450 3625
+Wire Wire Line
+	8450 4000 8750 4000
+Connection ~ 8750 4000
+Wire Wire Line
+	8750 4000 8750 3825
+$Comp
+L Diode:1N4148 D6
+U 1 1 60115557
+P 9425 3575
+F 0 "D6" V 9379 3655 50  0000 L CNN
+F 1 "1N4148" V 9470 3655 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 9425 3400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9425 3575 50  0001 C CNN
+	1    9425 3575
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9425 3725 9425 4000
+Wire Wire Line
+	9425 4000 8750 4000
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 6011981F
+P 10625 3050
+F 0 "J9" V 10825 3025 50  0000 R CNN
+F 1 "Conn_01x02" V 10750 3200 50  0000 R CNN
+F 2 "Connector_JST:JST_VH_B2P-VH-B_1x02_P3.96mm_Vertical" H 10625 3050 50  0001 C CNN
+F 3 "~" H 10625 3050 50  0001 C CNN
+	1    10625 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J10
+U 1 1 6011D899
+P 10625 3575
+F 0 "J10" V 10825 3550 50  0000 R CNN
+F 1 "Conn_01x02" V 10750 3725 50  0000 R CNN
+F 2 "Connector_JST:JST_VH_B2P-VH-B_1x02_P3.96mm_Vertical" H 10625 3575 50  0001 C CNN
+F 3 "~" H 10625 3575 50  0001 C CNN
+	1    10625 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J11
+U 1 1 6011DEAF
+P 10625 4100
+F 0 "J11" V 10825 4075 50  0000 R CNN
+F 1 "Conn_01x02" V 10750 4250 50  0000 R CNN
+F 2 "Connector_JST:JST_VH_B2P-VH-B_1x02_P3.96mm_Vertical" H 10625 4100 50  0001 C CNN
+F 3 "~" H 10625 4100 50  0001 C CNN
+	1    10625 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J12
+U 1 1 60120BCF
+P 10625 4600
+F 0 "J12" V 10825 4575 50  0000 R CNN
+F 1 "Conn_01x02" V 10750 4750 50  0000 R CNN
+F 2 "Connector_JST:JST_VH_B2P-VH-B_1x02_P3.96mm_Vertical" H 10625 4600 50  0001 C CNN
+F 3 "~" H 10625 4600 50  0001 C CNN
+	1    10625 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10425 3150 10300 3150
+Wire Wire Line
+	10300 3150 10300 3675
+Wire Wire Line
+	10300 3675 10425 3675
+Wire Wire Line
+	10300 3675 10300 4200
+Wire Wire Line
+	10300 4200 10425 4200
+Connection ~ 10300 3675
+Wire Wire Line
+	10300 4200 10300 4700
+Wire Wire Line
+	10300 4700 10425 4700
+Connection ~ 10300 4200
+Wire Wire Line
+	10200 2825 10200 3050
+Wire Wire Line
+	10200 3575 10425 3575
+Wire Wire Line
+	10200 3575 10200 4100
+Wire Wire Line
+	10200 4100 10425 4100
+Connection ~ 10200 3575
+Wire Wire Line
+	10200 4100 10200 4600
+Wire Wire Line
+	10200 4600 10425 4600
+Connection ~ 10200 4100
+Wire Wire Line
+	8750 3425 9425 3425
+Text Label 9250 3425 2    50   ~ 0
+FAN_OUT
+Text Label 9925 4700 0    50   ~ 0
+FAN_OUT
+Wire Wire Line
+	9925 4700 10300 4700
+Connection ~ 10300 4700
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60172263
+P 750 7100
+F 0 "H2" H 850 7146 50  0000 L CNN
+F 1 "MountingHole" H 850 7055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 750 7100 50  0001 C CNN
+F 3 "~" H 750 7100 50  0001 C CNN
+	1    750  7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 601726FC
+P 750 7350
+F 0 "H3" H 850 7396 50  0000 L CNN
+F 1 "MountingHole" H 850 7305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 750 7350 50  0001 C CNN
+F 3 "~" H 750 7350 50  0001 C CNN
+	1    750  7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 60172C1E
+P 750 7600
+F 0 "H4" H 850 7646 50  0000 L CNN
+F 1 "MountingHole" H 850 7555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 750 7600 50  0001 C CNN
+F 3 "~" H 750 7600 50  0001 C CNN
+	1    750  7600
+	1    0    0    -1  
+$EndComp
+Text Notes 8750 3150 0    50   ~ 0
+PACK FAN\nCONTROL
+Wire Notes Line
+	7900 2925 7900 4325
+Wire Notes Line
+	7900 4325 9825 4325
+Wire Notes Line
+	9825 4325 9825 2925
+Wire Notes Line
+	9825 2925 7900 2925
+$Comp
+L Connector_Generic:Conn_01x08 J13
+U 1 1 600CA0BB
+P 6275 7075
+F 0 "J13" H 6355 7067 50  0000 L CNN
+F 1 "Conn_01x08" H 6355 6976 50  0000 L CNN
+F 2 "AERO_CUSTOM:TE_1-776280-1_8pin_Horizontal" H 6275 7075 50  0001 C CNN
+F 3 "~" H 6275 7075 50  0001 C CNN
+	1    6275 7075
+	1    0    0    -1  
+$EndComp
+Text Label 10400 2825 2    50   ~ 0
+12_IN
+Wire Wire Line
+	10425 3050 10200 3050
+Connection ~ 10200 3050
+Wire Wire Line
+	10200 3050 10200 3575
+Wire Wire Line
+	10200 2825 10400 2825
+Wire Wire Line
+	6075 6975 5600 6975
+Text Label 5600 6975 0    50   ~ 0
+FAN_CTRL
+Text Notes 6425 6925 0    50   ~ 0
+Fan Control \nfrom BMS
+Text Notes 5950 6600 0    50   ~ 0
+CAN is for BMS \nlocal bus\n
+Text Label 3800 7150 0    50   ~ 0
+CAN+
+Wire Wire Line
+	3800 7150 4100 7150
+Text Label 3800 7250 0    50   ~ 0
+CAN-
+Wire Wire Line
+	3800 7250 4100 7250
+Text Notes 3975 7025 0    50   ~ 0
+CAN is for BMS \nlocal bus\n
+$Comp
+L power:+12V #PWR0106
+U 1 1 6037F25F
+P 5375 7275
+F 0 "#PWR0106" H 5375 7125 50  0001 C CNN
+F 1 "+12V" H 5390 7448 50  0000 C CNN
+F 2 "" H 5375 7275 50  0001 C CNN
+F 3 "" H 5375 7275 50  0001 C CNN
+	1    5375 7275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5525 7175 6075 7175
+$Comp
+L Connector_Generic:Conn_01x04 J5
+U 1 1 603CB967
+P 4300 7250
+F 0 "J5" H 4380 7242 50  0000 L CNN
+F 1 "Conn_01x04" H 4380 7151 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 4300 7250 50  0001 C CNN
+F 3 "~" H 4300 7250 50  0001 C CNN
+	1    4300 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 603CC19E
+P 3625 7450
+F 0 "#PWR0107" H 3625 7200 50  0001 C CNN
+F 1 "GND" H 3630 7277 50  0000 C CNN
+F 2 "" H 3625 7450 50  0001 C CNN
+F 3 "" H 3625 7450 50  0001 C CNN
+	1    3625 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3625 7450 4100 7450
+$Comp
+L power:+12V #PWR0108
+U 1 1 603CC1A9
+P 3625 7350
+F 0 "#PWR0108" H 3625 7200 50  0001 C CNN
+F 1 "+12V" H 3640 7523 50  0000 C CNN
+F 2 "" H 3625 7350 50  0001 C CNN
+F 3 "" H 3625 7350 50  0001 C CNN
+	1    3625 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3625 7350 4100 7350
+$Comp
+L Device:Q_NMOS_GDS Q2
+U 1 1 603D783A
+P 8650 3625
+F 0 "Q2" H 8854 3671 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 8854 3580 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 8850 3725 50  0001 C CNN
+F 3 "~" H 8650 3625 50  0001 C CNN
+	1    8650 3625
+	1    0    0    -1  
+$EndComp
+Connection ~ 8450 3625
+Text Label 5525 7175 0    50   ~ 0
+SHUTDOWN_IN
+Wire Wire Line
+	5375 7275 6075 7275
+Wire Wire Line
+	5375 7375 6075 7375
+$EndSCHEMATC
