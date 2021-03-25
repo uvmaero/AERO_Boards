@@ -354,4 +354,8 @@ Wire Wire Line
 	5375 7275 6075 7275
 Wire Wire Line
 	5375 7375 6075 7375
+Text Notes 11000 4100 1    50   ~ 0
+Use 2.5mm spacing
+Text Notes 7100 6950 0    50   ~ 0
+TODO: \nJ9-J12 need different part (2.5mm spacing B2B XH?)\nHV single pin connect need different part (DF-22)
 $EndSCHEMATC
